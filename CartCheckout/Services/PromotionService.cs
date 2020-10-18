@@ -22,7 +22,7 @@ namespace PriceCalculator.Service
         {
             return new List<MultiProductPromotion>
             {
-                new MultiProductPromotion{ PromotionId=1, Quantity=3, SKU=new List<string>{"C","D"}, PromotionPrice=30 }
+                new MultiProductPromotion{ PromotionId=1, Quantity=1, SKU=new List<string>{"C","D"}, PromotionPrice=30 }
             };
         }
     }
