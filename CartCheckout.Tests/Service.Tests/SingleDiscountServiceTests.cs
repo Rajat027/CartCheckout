@@ -58,7 +58,7 @@ namespace CartCheckout.Tests
 
             var promotionList = new List<SingleProductPromotion>
             {
-                new SingleProductPromotion{ PromotionId=1, Quantity=3, SKU="B", PromotionPrice=45 },
+                new SingleProductPromotion{ PromotionId=2, Quantity=2, SKU="B", PromotionPrice=45 },
             };
             mockProductService.Setup(s => s.GetProductPrice(It.IsAny<string>())).Returns(30);
             mockPromotionService.Setup(m => m.GetSingleProductPromotions()).Returns(promotionList);
@@ -66,7 +66,7 @@ namespace CartCheckout.Tests
             var productService = new SingleDiscountService(mockPromotionService.Object, mockProductService.Object);
             var result = productService.CalculateDiscount(testInput);
 
-            Assert.AreEqual(10, result);
+            Assert.AreEqual(30, result);
 
         }
 
