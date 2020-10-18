@@ -3,6 +3,32 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome to your Cart</h1>
 </div>
+
+<form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Index">
+    <table>
+        <tr>
+            <td>Product A Count: </td>
+            <td><input type="number" id="intProductA" name="ProductA" /></td>
+        </tr>
+        <tr>
+            <td>Product B Count: </td>
+            <td><input type="number" id="intProductB" name="ProductB" /></td>
+        </tr>
+        <tr>
+            <td>Product C Count: </td>
+            <td><input type="number" id="intProductC" name="ProductC" /></td>
+        </tr>
+        <tr>
+            <td>Product D Count: </td>
+            <td><input type="number" id="intProductD" name="ProductD" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+    <hr />
+    <h> @ViewBag.TotalCost </h>
+</form>
