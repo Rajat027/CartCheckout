@@ -1,10 +1,10 @@
-﻿using PriceCalculator.Models;
+﻿using CartCheckout.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PriceCalculator.Interfaces
+namespace CartCheckout.Interfaces
 {
     public interface ICartService
     {

@@ -4,7 +4,7 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PriceCalculator.Models
+namespace CartCheckout.Models
 {
     public class MultiProductPromotion
     {

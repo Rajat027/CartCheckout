@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PriceCalculator.Models;
-using PriceCalculator.Service;
+using CartCheckout.Models;
+using CartCheckout.Service;
 using System.Collections.Generic;
 
 namespace CartCheckout.Tests

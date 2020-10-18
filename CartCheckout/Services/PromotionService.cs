@@ -1,11 +1,11 @@
-﻿using PriceCalculator.Interfaces;
-using PriceCalculator.Models;
+﻿using CartCheckout.Interfaces;
+using CartCheckout.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PriceCalculator.Service
+namespace CartCheckout.Service
 {
     public class PromotionsService : IPromotionService
     {
