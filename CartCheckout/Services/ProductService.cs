@@ -11,7 +11,21 @@ namespace PriceCalculator.Service
 
         public int GetProductPrice(string SKU)
         {
-            throw new NotImplementedException();
+            switch (SKU)
+            {
+                case "A":
+                    return 50;
+
+                case "B":
+                    return 30;
+
+                case "C":
+                    return 20;
+
+                case "D":
+                    return 15;
+            }
+            return -1;
         }
     }
 }
