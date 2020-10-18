@@ -11,12 +11,19 @@ namespace PriceCalculator.Service
     {
         public List<SingleProductPromotion> GetSingleProductPromotions()
         {
-            throw new NotImplementedException();
+            return new List<SingleProductPromotion>
+            {
+                new SingleProductPromotion{ PromotionId=1, Quantity=3, SKU="A", PromotionPrice=130 },
+                new SingleProductPromotion{ PromotionId=2, Quantity=2, SKU="B", PromotionPrice=45 }
+            };
         }
 
         public List<MultiProductPromotion> GetMultiProductPromotions()
         {
-            throw new NotImplementedException();
+            return new List<MultiProductPromotion>
+            {
+                new MultiProductPromotion{ PromotionId=1, Quantity=3, SKU=new List<string>{"C","D"}, PromotionPrice=30 }
+            };
         }
     }
 }
